@@ -1,12 +1,12 @@
 import Atag from './components/atoms/Atag';
 import Button from './components/atoms/Button';
+import Main from './components/pages/Main';
+import Header from './components/templetes/Header';
 
 function App() {
   return (
     <div className="App">
-      hello
-      <Atag link={"https://www.google.com/"}>Google</Atag>
-      <Button />
+     <Main/>
     </div>
   );
 }
