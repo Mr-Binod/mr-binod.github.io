@@ -5,7 +5,7 @@ const Wrap = styled.div`
     width : max-content;
     padding: 0 5px;
     color: #e0e0e0;
-    margin: 0 10px;
+    margin: 0 20px;
     cursor: pointer;
 `
 

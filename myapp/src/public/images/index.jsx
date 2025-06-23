@@ -1,5 +1,5 @@
-import logo from "./Binglogo.png"
+import logo from "./itachi.jpg"
+import newlogo from "./Blogo.png"
 
 
-
-export default logo
+export {logo, newlogo}

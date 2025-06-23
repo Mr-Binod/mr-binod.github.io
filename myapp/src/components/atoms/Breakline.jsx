@@ -7,7 +7,8 @@ const Wrap = styled.div`
         content: "";
         display: block;
         height: 0.08px;
-        background-color: #dfdfdf;
+        background-color: #686868;
+        
     }
 `
 

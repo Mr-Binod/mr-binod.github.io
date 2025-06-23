@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import HeaderCategories from '../molecules/HeaderCategories'
-import logo from '../../public/images'
+import { newlogo } from '../../public/images'
 
 const Wrap = styled.div`
     margin : 0;
@@ -12,8 +12,15 @@ const Wrap = styled.div`
     align-items: center;
     color: #bbbbbb;
     padding: 0 50px;
-    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #696969;
+    background: #000;
     .Logo {
+        cursor: pointer;
         height : 64px;
         width : 64px;
         border-radius: 15px;
@@ -28,12 +35,13 @@ const Wrap = styled.div`
 const Header = () => {
     return (
         <Wrap>
-            <img src={logo} alt="" className='Logo' />
+            <img src={newlogo} alt="" className='Logo' />
             <HeaderCategories />
             <div className='userinfo'>
                 <img src="" alt="" />
                 <span className='username'>비노드</span>
             </div>
+            
         </Wrap>
     )
 }
