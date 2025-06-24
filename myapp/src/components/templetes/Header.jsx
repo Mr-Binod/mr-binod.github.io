@@ -21,8 +21,7 @@ const Wrap = styled.div`
     background: #000;
     .Logo {
         cursor: pointer;
-        height : 64px;
-        width : 64px;
+        height : 50px;
         border-radius: 15px;
     }
 

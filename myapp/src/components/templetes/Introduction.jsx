@@ -9,8 +9,8 @@ const Wrap = styled.div`
     /* justify-content: space-around; */
     /* align-items: center; */
     gap: 50px;
-    padding: 0 80px;
-    padding-top: 100px;
+    padding: 160px 80px;
+    /* padding-top: 150px; */
     font-size : 22px;
     
     .profileImg {
@@ -42,12 +42,17 @@ const Wrap = styled.div`
       font-size: 80px;
     }
     .Firstline {
+      width: 1000px;
+      margin: 0 auto;
       display: flex;
+
       justify-content: space-between;
       
     }
     .Secondline {
-      margin-top: 150px;
+       width: 800px;
+      margin: 0 auto;
+      margin-top: 120px;
       display: flex;
       justify-content: space-between;
 

@@ -6,8 +6,9 @@ const Wrap = styled.div`
     span {
         content: "";
         display: block;
-        height: 0.08px;
-        background-color: #686868;
+        height: 1px;
+        background-color: #757575;
+        color: #6b6b6b;
         
     }
 `

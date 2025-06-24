@@ -1,9 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import Header from '../templetes/Header'
-import Breakline from '../atoms/Breakline'
 import Introduction from '../templetes/Introduction'
 import Aboutme from '../templetes/Aboutme'
+import Breakline from '../atoms/Breakline'
+import Skills from '../templetes/Skills'
+import Experience from '../templetes/Experience'
 
 
 const Wrap = styled.div`
@@ -18,9 +20,13 @@ const Main = () => {
     return (
         <Wrap>
             <Header />
-            {/* <Breakline/> */}
             <Introduction/>
+            <Breakline/>
             <Aboutme/>
+            <Breakline/>
+            <Skills/>
+            <Breakline/>
+            <Experience/>
         </Wrap>
     )
 }
