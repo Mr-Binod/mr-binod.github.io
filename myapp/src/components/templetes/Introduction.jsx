@@ -38,11 +38,10 @@ const Wrap = styled.div`
     }
 
     .Greetmsg {
-   
       font-size: 80px;
     }
     .Firstline {
-      width: 1000px;
+      width: 800px;
       margin: 0 auto;
       display: flex;
 
@@ -52,7 +51,7 @@ const Wrap = styled.div`
     .Secondline {
        width: 800px;
       margin: 0 auto;
-      margin-top: 120px;
+      margin-top: 80px;
       display: flex;
       justify-content: space-between;
 
@@ -68,12 +67,18 @@ const Introduction = () => {
       <div className='Introduction'>
         <div className='Greetings'>
           <div className='Greetmsg'>Meet Binod</div>
-          <p>저는 문제를 해결하고 성장하는 것에 즐거움을 느끼는 개발자입니다.</p><br /><br />
+          <p>저는 문제 상황에서도 끝까지 책임감을 가지고 임하는 자세를 중요하게 생각합니다.
+            회사의 내규와 방향에 맞춰 필요한 역할을 충실히 수행하며 조직에 기여하겠습니다.
+          </p><br /><br />
         </div>
         <div className='Firstline'>
           <span>이름 : 비노드 (SHRESTHA BINOD)</span>
-          <span>직무 : 풀스택 개발자</span>
+          <span>직무 : 블록체인 과 웹 풀스택 개발자</span>
+          {/* <span>이메일 : blackorion3@gmail.com</span> */}
+        </div>
+        <div className='Secondline'>
           <span>이메일 : blackorion3@gmail.com</span>
+
         </div>
         <div className='Secondline'>
           <span>#메타인지</span>

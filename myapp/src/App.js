@@ -1,13 +1,19 @@
-import Atag from './components/atoms/Atag';
-import Button from './components/atoms/Button';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Projects from './components/pages/Projects';
 import Main from './components/pages/Main';
-import Header from './components/templetes/Header';
 
 function App() {
   return (
-    <div className="App">
-     <Main/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        {/* Main route */}
+        <Route path='/' element={<Main />}>
+          {/* Nested routes inside Main */}
+          <Route path='project' element={<Projects />} />
+          {/* <Route path='contact' element={<Contact />} /> */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
