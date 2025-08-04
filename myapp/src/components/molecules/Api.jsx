@@ -1,19 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
-import { kakao } from '../../public/images'
 import { Skillcontents } from '../atoms/Skillcontents'
+import { kakaomap } from '../../public'
 
 
 
 const Wrap = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     color: #e0e0e0;
     margin-top: 30px;
     .Contents{
-        gap: 30px;
+        gap: 40px;
         margin-top: 30px;
         display: flex;
         align-items: center;
@@ -25,7 +25,7 @@ const Api = ({children}) => {
         <Wrap>
             <div>{children}</div>
             <div className='Contents'>
-                <Skillcontents>{kakao}</Skillcontents>
+                <Skillcontents>{kakaomap}</Skillcontents>
             </div>
         </Wrap>
     )

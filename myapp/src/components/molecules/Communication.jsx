@@ -1,19 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
-import { discord, github, Notion } from '../../public/images'
+import { discord, github, Notion } from '../../public'
 import { Skillcontents } from '../atoms/Skillcontents'
 
 const Wrap = styled.div`
     color: #e0e0e0;
-    padding: 0 200px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     margin-top: 30px;
 
     .Contents {
-        gap:  30px;
+        gap:  40px;
         margin-top: 30px;
         display: flex;
         align-items: center;

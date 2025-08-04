@@ -1,34 +1,36 @@
 import React from 'react'
 import styled from 'styled-components'
-import { logo } from '../../public/images'
+import { logo } from '../../public'
 
 
 const Wrap = styled.div`
     color: #dadada;
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-around;
     /* align-items: center; */
     gap: 50px;
-    padding: 160px 80px;
+    padding: 160px 140px;
     /* padding-top: 150px; */
     font-size : 22px;
     
     .profileImg {
     border: 1px solid;
     border-radius : 10px;
+    width: 500px;
+    overflow: hidden;
     }
 
     .Greetings {
      
-      width: 1100px;
+      width: 800px;
       display: flex;
       flex-direction: column;
       /* justify-content: center; */
       align-items: center;
       
       p {
-        padding-top: 30px;
-        font-size: 26px;
+        /* padding-top: 30px; */
+        font-size: 24px;
       }
     }
     .ProfileImg{
@@ -38,7 +40,7 @@ const Wrap = styled.div`
     }
 
     .Greetmsg {
-      font-size: 80px;
+      font-size: 60px;
     }
     .Firstline {
       width: 800px;
@@ -51,7 +53,7 @@ const Wrap = styled.div`
     .Secondline {
        width: 800px;
       margin: 0 auto;
-      margin-top: 80px;
+      margin-top: 60px;
       display: flex;
       justify-content: space-between;
 
@@ -62,7 +64,7 @@ const Introduction = () => {
   return (
     <Wrap>
       <div className='ProfileImg'>
-        <img src={logo} alt="" width="650px" className='profileImg' />
+        <img src={logo} alt=""  className='profileImg' />
       </div>
       <div className='Introduction'>
         <div className='Greetings'>

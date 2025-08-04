@@ -1,0 +1,44 @@
+import logo from "./images/itachi.jpg"
+import newlogo from "./images/Blogo.png"
+import express from "./images/express.png"
+import css from "./images/css.png"
+import kakao from "./images/kakao.png"
+import kakaomap from "./images/kakaomap.png"
+import mysql from "./images/mysql.png"
+import Notion from "./images/Notion.png"
+import react from "./images/react.jpg"
+import html from "./images/html.png"
+import github from "./images/github.png"
+import nodejs from "./images/nodejs.png"
+import javascript from "./images/javascript.png"
+import sequelize from "./images/sequelize.png"
+import typescript from "./images/typescript.png"
+import discord from "./images/discord.png"
+import zunoDmain from "./project.images/ZunoDmain.png"
+import desktopview from "./project.images/desktopview.gif"
+import Notionary from "./project.images/Notionary.gif"
+import meetscoop from "./project.images/meetscoop.gif"
+
+
+export {logo,
+    discord, 
+    sequelize, 
+    typescript, 
+    javascript, 
+    newlogo, 
+    express, 
+    css, 
+    kakao, 
+    kakaomap, 
+    mysql, 
+    Notion, 
+    react, 
+    html, 
+    github, 
+    nodejs, 
+    zunoDmain,
+    desktopview,
+    Notionary,
+    meetscoop
+
+}

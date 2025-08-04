@@ -8,15 +8,15 @@ import Api from '../molecules/Api'
 
 const Wrap = styled.h3`
     color: #e0e0e0;
-    padding: 80px 200px;
+    padding: 40px 400px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
 
 
     .Title{
-      font-size: 80px;
+      font-size: 60px;
     }
 `
 

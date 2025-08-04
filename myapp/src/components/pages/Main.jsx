@@ -14,6 +14,7 @@ const Wrap = styled.div`
     min-height: 100vh;
     padding-bottom: 100px;
     font-size: 18px;
+    color: #f7f7f7;
     
 `
 const Main = () => {
@@ -22,9 +23,9 @@ const Main = () => {
             <Header />
             <Introduction/>
             <Breakline/>
-            <Aboutme/>
-            <Breakline/>
             <Skills/>
+            <Breakline/>
+            <Aboutme id='aboutme'/>
             <Breakline/>
             <Experience/>
         </Wrap>

@@ -7,17 +7,12 @@ const Wrap = styled.div`
     padding: 100px 70px;
     /* margin-top: 100px; */
     .Title{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 1105px;
+        margin: 0 auto;
     }
-    .Titlecontent{
-        font-size: 80px;
-    }
-
+  
     .Answers{
-        
-        width: 1000px;
+        width: 1105px;
         height: max-content;
         border-radius: 25px;
         /* border: 1px solid white; */
@@ -28,13 +23,17 @@ const Wrap = styled.div`
     }
 `
 
+const Title = styled.h1`
+    font-size: 60px;
+`
+
 const Aboutme = () => {
     return (
         <Wrap>
             <div className='Title'>
-                <div className='Titlecontent'>
+                <Title>
                     Aboutme
-                </div>
+                </Title>
                 <h1 >Q & A</h1>
             </div>
             <div className='Answers'>

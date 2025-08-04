@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import HeaderCategories from '../molecules/HeaderCategories'
-import { newlogo } from '../../public/images'
+import { newlogo } from '../../public'
+import { useNavigate } from 'react-router-dom'
 
 const Wrap = styled.div`
     margin : 0;
@@ -32,9 +33,10 @@ const Wrap = styled.div`
 
 
 const Header = () => {
+    const navigate = useNavigate()
     return (
         <Wrap>
-            <img src={newlogo} alt="" className='Logo' />
+            <img src={newlogo} onClick={() => navigate('/')} alt="" className='Logo' />
             <HeaderCategories />
             <div className='userinfo'>
                 <img src="" alt="" />
