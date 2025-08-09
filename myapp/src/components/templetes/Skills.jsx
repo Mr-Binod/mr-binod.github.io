@@ -5,6 +5,8 @@ import BackSkills from '../molecules/BackSkills'
 import Database from '../molecules/Database'
 import Communication from '../molecules/Communication'
 import Api from '../molecules/Api'
+import { Skillcontents } from '../atoms/Skillcontents'
+import { solidity } from '../../public'
 
 const Wrap = styled.h3`
     color: #e0e0e0;
@@ -27,6 +29,8 @@ const Skills = () => {
       <FrontSkills>{"FrontEnd"}</FrontSkills>
       <BackSkills>{"BackEnd"}</BackSkills>
       <Database>{"Database"}</Database>
+      <div style={{margin: "20px 0px"}}>contracts</div>
+      <Skillcontents>{solidity}</Skillcontents>
       <Api>{"API"}</Api>
       <Communication>{"Communication"}</Communication>
     </Wrap>

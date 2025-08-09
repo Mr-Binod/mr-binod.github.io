@@ -85,8 +85,8 @@ const ProjectCard = () => {
     <Wrap>
     <Title>Meetscoop 프로젝트</Title>
       <Image src={meetscoop} alt="project" />
-      <Desc>프로젝트 소개 : Notionary는 워크스페이스 과 커뮤니티 통일해 사용자가 문서 작성, 기록할수 있고 커뮤니티에 공유하고 프드백을 받을수 있습니다. 
-        여러개 카태고리의 분리 되어 각각의 카태고리에 맞는 개인 고민과, 질문을 하고 피드백을 받을수 있는 플랫품으로 개발하게 되었습니다.
+      <Desc>프로젝트 소개 : meetscoop는 도호회 회원들의 적극적인 참여를 통해 협력과 성장을 도모하는 것을 목표로 합니다. 
+        성공적인 동호회 프로젝트 사례를 참고하여 기대 요과와 구체적인 결과물을 제시합니다.
       </Desc> <br/>
       <Desclink style={{color: 'lightblue'}} onClick={() => {
       window.open('https://meetscoop.shop/', '_blank')

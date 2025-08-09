@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { express, javascript, nodejs, sequelize, typescript } from '../../public'
+import { drizzle, express, javascript, nest, nodejs, sequelize, typescript } from '../../public'
 import { Skillcontents } from '../atoms/Skillcontents'
 
 
@@ -24,11 +24,13 @@ const BackSkills = ({children}) => {
         <Wrap>
             <div>{children}</div>
             <div className='Contents'>
+                <Skillcontents>{nest}</Skillcontents>
                 <Skillcontents>{javascript}</Skillcontents>
                 <Skillcontents>{nodejs}</Skillcontents>
                 <Skillcontents>{express}</Skillcontents>
                 <Skillcontents>{sequelize}</Skillcontents>
                 <Skillcontents>{typescript}</Skillcontents>
+                <Skillcontents>{drizzle}</Skillcontents>
             </div>
         </Wrap>
     )

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Skillcontents } from '../atoms/Skillcontents'
-import { kakaomap } from '../../public'
+import { kakao, kakaomap } from '../../public'
 
 
 
@@ -26,6 +26,7 @@ const Api = ({children}) => {
             <div>{children}</div>
             <div className='Contents'>
                 <Skillcontents>{kakaomap}</Skillcontents>
+                <Skillcontents>{kakao}</Skillcontents>
             </div>
         </Wrap>
     )

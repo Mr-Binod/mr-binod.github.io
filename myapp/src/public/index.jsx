@@ -18,6 +18,11 @@ import zunoDmain from "./project.images/ZunoDmain.png"
 import desktopview from "./project.images/desktopview.gif"
 import Notionary from "./project.images/Notionary.gif"
 import meetscoop from "./project.images/meetscoop.gif"
+import nest from "./images/nest.png"
+import solidity from "./images/solidity.png"
+import postgres from "./images/postgressql.png"
+import drizzle from "./images/drizzle.png"
+import profile from "./images/profile139.jpg"
 
 
 export {logo,
@@ -39,6 +44,10 @@ export {logo,
     zunoDmain,
     desktopview,
     Notionary,
-    meetscoop
-
+    meetscoop,
+    nest,
+    solidity,
+    postgres,
+    drizzle ,
+    profile
 }

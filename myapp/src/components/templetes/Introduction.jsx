@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { logo } from '../../public'
+import { profile } from '../../public'
 
 
 const Wrap = styled.div`
@@ -9,16 +9,22 @@ const Wrap = styled.div`
     justify-content: space-around;
     /* align-items: center; */
     gap: 50px;
-    padding: 160px 140px;
+    padding: 160px 160px;
     /* padding-top: 150px; */
     font-size : 22px;
     
     .profileImg {
     border: 1px solid;
     border-radius : 10px;
-    width: 500px;
-    overflow: hidden;
-    }
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1.3);
+  transform-origin: center center;  /* scale from center */
+  
+  /* Smooth scaling */
+  transition: transform 0.3s ease;
+  }
 
     .Greetings {
      
@@ -34,9 +40,12 @@ const Wrap = styled.div`
       }
     }
     .ProfileImg{
-      height: 620px;
+      width : 500px;
+      height : 600px;
       overflow: hidden;
       border-radius: 15px;
+      object-fit: cover;
+      object-position: center;
     }
 
     .Greetmsg {
@@ -64,7 +73,7 @@ const Introduction = () => {
   return (
     <Wrap>
       <div className='ProfileImg'>
-        <img src={logo} alt=""  className='profileImg' />
+        <img src={profile} alt=""  className='profileImg' />
       </div>
       <div className='Introduction'>
         <div className='Greetings'>
@@ -75,7 +84,7 @@ const Introduction = () => {
         </div>
         <div className='Firstline'>
           <span>이름 : 비노드 (SHRESTHA BINOD)</span>
-          <span>직무 : 블록체인 과 웹 풀스택 개발자</span>
+          <span>직무 : 블록체인 및 웹 풀스택 개발자</span>
           {/* <span>이메일 : blackorion3@gmail.com</span> */}
         </div>
         <div className='Secondline'>

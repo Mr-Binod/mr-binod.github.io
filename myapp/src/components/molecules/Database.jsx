@@ -1,5 +1,5 @@
 import React from 'react'
-import { mysql } from '../../public'
+import { mysql, postgres } from '../../public'
 import styled from 'styled-components'
 import { Skillcontents } from '../atoms/Skillcontents'
 
@@ -26,6 +26,7 @@ const Database = ({children}) => {
                 <div>{children}</div>
                 <div className='Contents'>
                     <Skillcontents>{mysql}</Skillcontents>
+                    <Skillcontents>{postgres}</Skillcontents>
                 </div>
             </Wrap>
     )
