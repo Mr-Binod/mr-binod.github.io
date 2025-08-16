@@ -23,7 +23,7 @@ import solidity from "./images/solidity.png"
 import postgres from "./images/postgressql.png"
 import drizzle from "./images/drizzle.png"
 import profile from "./images/profile139.jpg"
-
+import aws from "./images/aws.png"
 
 export {logo,
     discord, 
@@ -49,5 +49,6 @@ export {logo,
     solidity,
     postgres,
     drizzle ,
-    profile
+    profile,
+    aws 
 }

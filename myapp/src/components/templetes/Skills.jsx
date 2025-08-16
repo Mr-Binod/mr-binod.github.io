@@ -33,6 +33,7 @@ const Skills = () => {
       <Skillcontents>{solidity}</Skillcontents>
       <Api>{"API"}</Api>
       <Communication>{"Communication"}</Communication>
+      <Deployment>{"Deployment"}</Deployment>
     </Wrap>
   )
 }
