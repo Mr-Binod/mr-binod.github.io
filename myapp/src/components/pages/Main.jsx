@@ -6,6 +6,7 @@ import Aboutme from '../templetes/Aboutme'
 import Breakline from '../atoms/Breakline'
 import Skills from '../templetes/Skills'
 import Experience from '../templetes/Experience'
+import FadeInSection from '../molecules/FadeInSection'
 
 
 const Wrap = styled.div`
@@ -15,19 +16,27 @@ const Wrap = styled.div`
     padding-bottom: 100px;
     font-size: 18px;
     color: #f7f7f7;
-    
+    overflow-x: hidden; /* To prevent horizontal scrollbar during animations */
 `
 const Main = () => {
     return (
         <Wrap>
             <Header />
-            <Introduction/>
+            <FadeInSection>
+                <Introduction/>
+            </FadeInSection>
             <Breakline/>
-            <Skills/>
+            <FadeInSection>
+                <Skills/>
+            </FadeInSection>
             <Breakline/>
-            <Aboutme id='aboutme'/>
+            <FadeInSection>
+                <Aboutme id='aboutme'/>
+            </FadeInSection>
             <Breakline/>
-            <Experience/>
+            <FadeInSection>
+                <Experience/>
+            </FadeInSection>
         </Wrap>
     )
 }

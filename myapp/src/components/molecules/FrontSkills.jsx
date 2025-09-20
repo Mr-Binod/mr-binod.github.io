@@ -1,6 +1,6 @@
 import React, { Children } from 'react'
 import styled from 'styled-components'
-import { css, html, javascript, react, typescript } from '../../public'
+import { css, html, javascript, next, react, typescript } from '../../public'
 import { Skillcontents } from '../atoms/Skillcontents'
 
 
@@ -28,6 +28,7 @@ const FrontSkills = ({ children }) => {
                 <Skillcontents>{css}</Skillcontents>
                 <Skillcontents>{javascript}</Skillcontents>
                 <Skillcontents>{react}</Skillcontents>
+                <Skillcontents>{next}</Skillcontents>
                 <Skillcontents>{typescript}</Skillcontents>
             </div>
         </Wrap>

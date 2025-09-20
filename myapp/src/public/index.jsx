@@ -24,8 +24,13 @@ import postgres from "./images/postgressql.png"
 import drizzle from "./images/drizzle.png"
 import profile from "./images/profile139.jpg"
 import aws from "./images/aws.png"
+import bitcoin from "./images/bitcoin.avif"
+import ethereum from "./images/ethereum.avif"
+import avalanche from "./images/avalanche.jpg"
+import next from "./images/nextjs.webp"
+import sealiumlogin from "./images/adminlogin-ezgif.com.gif"
 
-export {logo,
+export {logo,bitcoin, ethereum, avalanche, next,sealiumlogin,
     discord, 
     sequelize, 
     typescript, 

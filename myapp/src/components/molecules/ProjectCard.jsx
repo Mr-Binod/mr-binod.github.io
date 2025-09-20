@@ -1,106 +1,166 @@
 import React from 'react'
 import styled from 'styled-components'
-import { desktopview, meetscoop, Notionary, zunoDmain} from '../../public'
 
 const Wrap = styled.div`
-    width : 500px;
-    height : 650px;
+    width: 100%; /* Full width on small screens */
+    max-width: 450px; /* Max width for larger screens */
+    min-height: 600px; /* Ensure consistent height for all cards */
     padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #f7f7f7;
+    border-radius: 15px; /* Slightly larger radius */
+    border: 1px solid #2a2a2a;
+    background: #1a1a1a;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     color: #bbbbbb;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute content vertically */
+
+    a {
+      color: #88ccff; /* Lighter blue for links */
+      text-decoration: none;
+
+      &:hover {
+        color: #aaddff;
+        text-decoration: underline;
+      }
+    }
+    .tags {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      color : #bbbbbb;
+      font-size: 0.9em;
+      line-height: 1.5;
+    }
+
+    /* Hover effect for the card */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+        border-color: #4a90e2;
+
+        /* Image zoom effect on card hover */
+        .project-image {
+            transform: scale(1.05);
+        }
+    }
 `
 
-const Title = styled.h1`
+const Title = styled.h2` /* Changed to h2 for semantic hierarchy */
     font-size: 24px;
     margin-bottom: 20px;
+    color: #f7f7f7; /* Ensure title is visible */
+    font-weight: 600;
 `
+
+const ImageContainer = styled.div`
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    overflow: hidden; /* Important for containing the zoomed image */
+    margin-bottom: 25px;
+    border: 1px solid #333; /* Subtle border for images */
+`;
 
 const Image = styled.img`
     width: 100%;
+    height: 100%;
     object-fit: cover;
-    margin-bottom: 40px;
+    transition: transform 0.4s ease-in-out; /* Smooth zoom transition */
 `
 
-const Desc = styled.div`
+const Desc = styled.p` /* Changed to p for semantic text */
     font-size: 16px;
-    /* margin-bottom: 20px; */
+    line-height: 1.6;
 `
-const Desclink = styled.div`
+
+const TechStack = styled.div`
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+`;
+
+const TechTag = styled.span`
+    background-color: #2c2c2c;
+    color: #a0a0a0;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid #444;
+`;
+
+const ButtonGroup = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between buttons */
+`;
+const Desclink = styled.button` /* Changed to button for semantic interaction */
     font-size: 16px;
     cursor: pointer;
     width: 100%;
     text-align: center;
     background-color: #1f3557;
-    padding: 10px;
+    padding: 12px;
     border-radius: 10px;
     box-sizing: border-box;
-    margin-top: 10px;
-    /* margin-bottom: 20px; */
+    font-weight: bold;
+    color: white; /* Ensure text is white */
+    border: none; /* Remove default button border */
+
     &:hover {
         background-color: #2e4b75;
-        color: #bbbbbb;
+        color: #e0e0e0;
     }
+
+    
 `
 
-const ProjectCard = () => {
-  return (<>
-    <Wrap >
-      <Title>ZunoNFT 프로젝트</Title>
-      <Image src={desktopview} alt="project" />
-      <Desc>프로젝트 소개 : 개인 프로젝트로 erc 4337 계정 추상화 로직 사용해서 구현하였습니다. 사용자가 회원 가입하면 
-        데이터베이스에 정보 저장되고 가입 완료됩니다. 로그인 가능하고 스마트 컨트랙트를 호출됩니다 스마트 컨트랙트 다 처리되면
-        스마트 계정 생기고 그때까지 사용자의 구매, 토큰 발행 같은 기능을 사용하면 오류발생시키고 스마트 계정 생성 완료되면 
-        사용자의 기능 사용 가능합니다. 
-      </Desc> <br/>
-      <Desclink style={{color: 'lightblue'}} onClick={() => {
-      window.open('https://bing-nft.vercel.app/', '_blank')
-    }}>
-        ZunoNFT 사이트로 이동하기
-      </Desclink>
-      <Desclink style={{color: 'lightblue'}} onClick={() => {
-      window.open('https://github.com/Mr-Binod/ZunoNFT', '_blank')
-    }}>
-         Github 이동하기
-      </Desclink>
-    </Wrap>
+const ProjectCard = ({ title, description, image, links, githubLink, siteLink, technologies }) => {
+  return (
     <Wrap>
-    <Title>Notionary 프로젝트</Title>
-      <Image src={Notionary} alt="project" />
-      <Desc>프로젝트 소개 : Notionary는 워크스페이스 과 커뮤니티 통일해 사용자가 문서 작성, 기록할수 있고 커뮤니티에 공유하고 프드백을 받을수 있습니다. 
-        여러개 카태고리의 분리 되어 각각의 카태고리에 맞는 개인 고민과, 질문을 하고 피드백을 받을수 있는 플랫품으로 개발하게 되었습니다.
-      </Desc> <br/>
-      <Desclink style={{color: 'lightblue'}} onClick={() => {
-      window.open('https://github.com/Mr-Binod/Notionary', '_blank')
-    }}>
-        Notionary 사이트로 이동하기
-      </Desclink>
-      <Desclink style={{color: 'lightblue'}} onClick={() => {
-      window.open('https://github.com/Mr-Binod/Notionary', '_blank')
-    }}>
-        Github 이동하기
-      </Desclink>
+      <div> {/* Group top content */}
+        <Title>{title}</Title>
+        <ImageContainer>
+            <Image src={image} alt={`${title} project screenshot`} className="project-image" />
+        </ImageContainer>
+        <Desc>{description}</Desc>
+        <TechStack>
+            {technologies?.map(tech => (
+                <TechTag key={tech}>{tech}</TechTag>
+            ))}
+        </TechStack>
+        {links && links.length > 0 && (
+          <div className='tags'>
+            {links.map((link, index) => (
+              <React.Fragment key={index}>
+                <a href={link.url} target="_blank" rel="noopener noreferrer">{link.text}</a>
+                {index < links.length - 1 && <br />}
+              </React.Fragment>
+            ))}
+          </div>
+        )}
+      </div>
+      <ButtonGroup> {/* Group bottom links */}
+        {siteLink && (
+            <Desclink onClick={() => {
+                window.open(siteLink, '_blank', 'noopener noreferrer');
+            }}>
+                사이트 이동하기
+            </Desclink>
+        )}
+        {githubLink && (
+            <Desclink onClick={() => {
+                window.open(githubLink, '_blank', 'noopener noreferrer');
+            }}>
+                Github 이동하기
+            </Desclink>
+        )}
+      </ButtonGroup>
     </Wrap>
-    <Wrap>
-    <Title>Meetscoop 프로젝트</Title>
-      <Image src={meetscoop} alt="project" />
-      <Desc>프로젝트 소개 : meetscoop는 도호회 회원들의 적극적인 참여를 통해 협력과 성장을 도모하는 것을 목표로 합니다. 
-        성공적인 동호회 프로젝트 사례를 참고하여 기대 요과와 구체적인 결과물을 제시합니다.
-      </Desc> <br/>
-      <Desclink style={{color: 'lightblue'}} onClick={() => {
-      window.open('https://meetscoop.shop/', '_blank')
-    }}>
-        Meetscoop 사이트로 이동하기
-      </Desclink>
-      <Desclink style={{color: 'lightblue'}} onClick={() => {
-      window.open('https://github.com/Mr-Binod/meetscoop', '_blank')
-    }}>
-        Github 이동하기
-      </Desclink>
-    </Wrap>
-    </>
-  )
+  );
 }
 
 export default ProjectCard

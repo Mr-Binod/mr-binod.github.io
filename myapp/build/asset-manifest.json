@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/myapp/build/static/css/main.e6c13ad2.css",
-    "main.js": "/myapp/build/static/js/main.8354d8e7.js",
+    "main.js": "/myapp/build/static/js/main.fae80955.js",
     "static/js/453.64512fd7.chunk.js": "/myapp/build/static/js/453.64512fd7.chunk.js",
     "static/media/desktopview.gif": "/myapp/build/static/media/desktopview.f551ad68d420c8fb8fa4.gif",
+    "static/media/adminlogin-ezgif.com.gif": "/myapp/build/static/media/adminlogin-ezgif.com.cecfa6899c767df8d1dd.gif",
     "static/media/Notionary.gif": "/myapp/build/static/media/Notionary.84c3b95119f9e5b40569.gif",
     "static/media/profile139.jpg": "/myapp/build/static/media/profile139.8e8c02f7ea5918038b19.jpg",
     "static/media/meetscoop.gif": "/myapp/build/static/media/meetscoop.19260e713c4f13f2c199.gif",
@@ -11,19 +12,24 @@
     "static/media/sequelize.png": "/myapp/build/static/media/sequelize.b0684179f059e29cf033.png",
     "static/media/react.jpg": "/myapp/build/static/media/react.5abf31ad1e3305b91555.jpg",
     "static/media/itachi.jpg": "/myapp/build/static/media/itachi.cc0bb7eb90de02341e5e.jpg",
+    "static/media/avalanche.jpg": "/myapp/build/static/media/avalanche.525f145c297e911a7a4c.jpg",
+    "static/media/bitcoin.avif": "/myapp/build/static/media/bitcoin.920192d7f5b840dde8bb.avif",
     "static/media/Notion.png": "/myapp/build/static/media/Notion.8d60a89a195f2f8d9ccd.png",
+    "static/media/aws.png": "/myapp/build/static/media/aws.187f8583fe319da0a192.png",
     "static/media/github.png": "/myapp/build/static/media/github.f3d873d71aa989badfd2.png",
     "static/media/mysql.png": "/myapp/build/static/media/mysql.670cfd2492a6c1e5ef4f.png",
     "static/media/Blogo.png": "/myapp/build/static/media/Blogo.0f4ef58e48f94451684f.png",
+    "static/media/ethereum.avif": "/myapp/build/static/media/ethereum.6ef8952794acd7965338.avif",
     "static/media/javascript.png": "/myapp/build/static/media/javascript.3dfb665e058d08c99f28.png",
     "static/media/css.png": "/myapp/build/static/media/css.4cc21f4995cbc50e36f0.png",
+    "static/media/nextjs.webp": "/myapp/build/static/media/nextjs.41b44988eaec650d75b2.webp",
     "index.html": "/myapp/build/index.html",
     "main.e6c13ad2.css.map": "/myapp/build/static/css/main.e6c13ad2.css.map",
-    "main.8354d8e7.js.map": "/myapp/build/static/js/main.8354d8e7.js.map",
+    "main.fae80955.js.map": "/myapp/build/static/js/main.fae80955.js.map",
     "453.64512fd7.chunk.js.map": "/myapp/build/static/js/453.64512fd7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.8354d8e7.js"
+    "static/js/main.fae80955.js"
   ]
 }

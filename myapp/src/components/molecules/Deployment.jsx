@@ -20,7 +20,7 @@ const Wrap = styled.div`
     }
 `
 
-const Deployment = () => {
+const Deployment = ({children}) => {
     return (
         <Wrap>
             <div>{children}</div>
@@ -31,4 +31,4 @@ const Deployment = () => {
     )
 }
 
-export default Deployment``
+export default Deployment
