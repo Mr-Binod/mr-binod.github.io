@@ -54,7 +54,7 @@ const ProjectsTemp = () => {
         {
             title: 'ZunoNFT 프로젝트',
             image: desktopview,
-            description: '개인 프로젝트로 erc 4337 계정 추상화 로직 사용해서 구현하였습니다. 사용자가 회원 가입하면 데이터베이스에 정보 저장되고 가입 완료됩니다. 로그인 가능하고 스마트 컨트랙트를 호출됩니다 스마트 컨트랙트 다 처리되면 스마트 계정 생기고 그때까지 사용자의 구매, 토큰 발행 같은 기능을 사용하면 오류발생시키고 스마트 계정 생성 완료되면 사용자의 기능 사용 가능합니다.',
+            description: '개인 프로젝트로 erc 4337 계정 추상화 로직 사용해서 구현하였습니다. 사용자가 토큰 발행, nft 구매, 판매 할수 있는 플랫품으로 개발하게 되었습니다 (id : admin, pwd : 1212) 로그이해서 확인히실수 있습니다. 회원가입시 스마트 계정떄문에 트랜젝션 일어나기때문에 프트폴리오에서 스마트계정 나올떄까지 기능들 사용할실수 없습니다',
             links: [],
             githubLink: 'https://github.com/Mr-Binod/ZunoNFT',
             siteLink: 'https://bing-nft.vercel.app/',
