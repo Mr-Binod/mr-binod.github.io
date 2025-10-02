@@ -24,7 +24,14 @@ const Wrap = styled.div`
     }
     .dataApi {
       display: flex;
-      gap: 40px;
+      align-items: center;
+      gap: 500px;
+      flex-wrap: wrap;
+    }
+    .dataApio {
+      display: flex;
+      align-items: center;
+      gap: 380px;
       flex-wrap: wrap;
     }
 `
@@ -40,7 +47,7 @@ const Skills = () => {
         <Database>{"Database"}</Database>
         <Api>{"API"}</Api>
       </div>
-      <div className='dataApi'>
+      <div className='dataApio'>
         <Communication>{"Communication"}</Communication>
         <Deployment>{"Deployment"}</Deployment>
       </div>
