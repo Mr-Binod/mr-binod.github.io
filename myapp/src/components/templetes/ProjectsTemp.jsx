@@ -49,7 +49,7 @@ const ProjectsTemp = () => {
                 { url: 'https://admin.sealiumback.store', text: 'Sealium 관리자 페이지 (id : ubin, pwd : asdf123!)' },
                 { url: 'https://vcv.sealiumback.store', text: 'Sealium 검증 페이지' },
             ],
-            githubLink: 'https://github.com/Mr-Binod/DID_Project_BACKEND', // Assuming this is the correct repo for Sealium
+            githubLink: 'https://github.com/Mr-Binod/Sealium', // Assuming this is the correct repo for Sealium
         },
         {
             title: 'ZunoNFT 프로젝트',
