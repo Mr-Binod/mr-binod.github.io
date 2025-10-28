@@ -6,8 +6,6 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // since GitHub Pages doesn't support Image Optimization
   },
-  basePath: '/mr-binod.github.io', // 👈 repo name
-  assetPrefix: '/mr-binod.github.io/', // 👈 repo name
 };
 
 export default nextConfig;
